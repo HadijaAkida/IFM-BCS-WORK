@@ -1,0 +1,264 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	background: #f5f5f5;
+}
+.flex{
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+}
+.flex-layout{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.flex-layout.column{
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.flex-layout.center{
+	-ms-align-items: center;
+	align-items: center;
+}
+.flex-layout.center-center{
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+.flex-layout.wrap{
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex-layout.end{
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+}
+
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+#container{
+	position: relative;
+	/*height: 100vh;*/
+}
+
+#mainNav form, #mainNav input, #mainNav button{
+	display: inline-block;
+}
+
+main{
+	margin-top: 70px;
+	min-height: calc(100vh - 70px);
+}
+
+#mainContent{
+	/*padding: 20px 60px;*/
+}
+
+#mainNav{
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 2;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+#pageTitle{
+	font-size: 25px; 
+	font-family: georgia;
+	font-weight: bold;
+}
+#pageTitle::first-letter{
+	text-transform: uppercase;
+}
+
+#userMenu{
+	position: relative;
+	padding: 10px;
+	padding-right: 0;
+	/*margin-right: 32px;*/
+}
+
+#userMenu #dp{
+	border-radius: 50%; 
+	background-color: #ddd;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	z-index: 1;
+	overflow:hidden;
+	box-sizing: border-box; 
+}
+#userMenu #dp img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 3px;
+	margin: auto;
+	width: 70%;
+}
+
+#userMenu #details{
+	white-space: nowrap;
+	position: absolute;
+	right: 0; top: 0;
+	padding: 20px;
+	padding-top: 17px;
+	padding-right:65px;
+	overflow: hidden;
+}
+
+#userMenu #details a{
+	display: block;
+	font-size: 0.8em;
+	text-align: right;
+	padding: 1px 0;
+	color: #000;
+	opacity: 1;
+	margin-bottom: 3px;
+}
+
+
+.rounded-btn{
+	background-color: transparent;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	border-radius: 28px;
+	border: 1px solid #999;
+	font-size: 12px;
+	font-family: verdana;
+	color: #000;
+	margin-top: 12px;
+	min-width: 60px;
+}
+
+.blog-post{
+	margin-bottom: 20px;
+	border-radius: 3px;
+	overflow: hidden;
+	text-decoration: none;
+	color: initial;
+	display: block;
+}
+
+.blog-post h3,
+.blog-post h5,
+.blog-post p{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+}
+
+.blog-post h3{
+	font-size: 1.35em;
+	max-width: 90%;
+	margin-bottom: 2px;
+}
+
+.blog-post h3 + p{
+	font-family: verdana;
+	font-size: 0.85em;
+}
+
+.blog-post .preview-bar{
+	height: 250px;
+	background: #fff;
+}
+
+.blog-post .image-preview{
+	position: relative;
+	box-sizing: border-box;
+	height: 250px;
+	padding: 20px;
+	background-color: #888;
+	color: #fff;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.blog-post .image-preview .scrim{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	transition: opacity 0.35s ease-out;
+}
+
+.blog-post:hover .scrim{
+	opacity: 0.4;
+}
+
+.blog-post .text-preview{
+	box-sizing: border-box;
+	height: 250px;
+	padding: 24px;
+	overflow: hidden;
+}
+
+.blog-post .text-preview .description{
+	margin-top: 12px;
+	font-size: 20px;
+	line-height: 1.35em;
+}
+
+.blog-post:not(.has-image) .image-preview,
+.blog-post.has-image .text-preview{
+	display: none;
+}
+
+.blog-post .title-bar{
+	background: #fff;
+	padding: 12px;
+}
+
+.blog-post:not(.has-image) .title-bar{
+	border-top: 1px solid #f5f5f5;
+}
+
+.blog-post .title-bar .pub-dp{
+	width: 40px;
+	height: 40px;
+	margin-right: 12px;
+	border-radius: 50%;
+	background-color: #ddd;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.blog-post .title-bar h5{
+	font-size: 1em;
+}
+
+.blog-post .title-bar p{
+	font-size: 0.7em;
+	font-family: verdana;
+}
