@@ -1,4 +1,4 @@
-<a href="#" class="blog-post has-image">
+<a href="blog-detail.php?has_image=true" class="blog-post has-image">
 	<div class="preview-bar">
 		<div class="image-preview flex-layout end" style="background-image: url(images/uploads/vac<?php echo ($i % 3) + 1; ?>.jpg);">
 			<div class="scrim"></div>

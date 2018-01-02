@@ -11,9 +11,9 @@
 		<main class="flex">
 			<header id="mainNav">
 				<div class="container flex-layout center">
-					<span id="pageTitle">
+					<a href="index.php" id="pageTitle">
 						News Blog
-					</span>
+					</a>
 					<span class="flex"></span>
 					<div id="userMenu">
 						<div id="dp">

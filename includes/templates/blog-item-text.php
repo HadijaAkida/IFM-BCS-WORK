@@ -1,4 +1,4 @@
-<a href="#" class="blog-post">
+<a href="blog-detail.php" class="blog-post">
 	<div class="preview-bar">
 		<div class="text-preview">
 			<div class="title">

@@ -84,6 +84,8 @@ main{
 	font-size: 25px; 
 	font-family: georgia;
 	font-weight: bold;
+	color: initial;
+	text-decoration: none;
 }
 #pageTitle::first-letter{
 	text-transform: uppercase;
@@ -261,4 +263,31 @@ main{
 .blog-post .title-bar p{
 	font-size: 0.7em;
 	font-family: verdana;
+}
+
+#postDetail{
+	padding-right: 50px;
+}
+
+#postTitle h1{
+	max-width: 90%;
+	line-height: 1.5em;
+	margin-top: 22px;
+}
+
+#postTitle p{
+	margin-bottom: 20px;
+}
+
+#postDescription p{
+	font-size: 1.2em;
+	line-height: 2em;
+	max-width: 95%;
+}
+
+#relatedTitle{
+	font-size: 1.4em;
+	margin-top: 22px;
+	margin-bottom: 22px;
+	color: #000;
 }
