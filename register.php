@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>UrioEdit Library IS</title>
+	<title>UrioEdit2 Library IS</title>
 	<link rel="stylesheet" href="css/authpages.css">
 </head>
 <body>
