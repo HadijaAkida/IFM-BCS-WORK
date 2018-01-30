@@ -62,7 +62,6 @@
 		</div>
 		<div style="margin-botto: -25px;">&nbsp;</div>
 		<input type="submit" name="submit" value="Register Now">&emsp;
-		<!-- <button type="reset">Clear Form</button> -->
 	</form>
 </body>
 </html>
