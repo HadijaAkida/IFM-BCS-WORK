@@ -2,7 +2,6 @@ body, html{
 	padding: 0;
 	margin: 0;
 	background-color: #fffdef;
-	/*#F5F9F7*/
 	background-image: -webkit-linear-gradient(top left, #fced5e, #fbf3a1);
 	background-image: -o-linear-gradient(top left, #fced5e, #fbf3a1);
 	background-image: linear-gradient(to bottom right, #fced5e, #fbf3a1);
@@ -23,7 +22,6 @@ form{
 	background-color: #fff;
 	padding: 20px 60px;
 	padding-top: 215px;
-	/*box-shadow: 0 0 3px rgba(0,0,0,0.3);*/
 	overflow: hidden;
 	border: 6px solid rgba(255,229,1,0.3);
 	border-radius: 4px; 
